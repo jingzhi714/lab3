@@ -1,0 +1,8 @@
+name: "Penguinsssssss"
+navbar:
+  title: "penguins"
+  left:
+    - text: "home"
+      href: penguins.html
+   
+output_dir: "."

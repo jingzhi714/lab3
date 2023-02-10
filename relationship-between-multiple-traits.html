@@ -266,38 +266,7 @@ $(document).ready(function () {
 </div>
 
 
-<p>##Data</p>
-<p>##single trait distribution</p>
-<pre class="r"><code>penguins%&gt;%
- ggplot()+
-  geom_histogram(mapping = aes(x = flipper_length_mm, fill=species)) +
-  facet_wrap(~island, nrow=3)</code></pre>
-<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_bin).</code></pre>
-<p><img src="penguins_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<p>##relationship between multiple traits</p>
-<pre class="r"><code>penguins %&gt;%
-  ggplot(mapping = aes(x = body_mass_g, y=flipper_length_mm, color=species)) +
-  geom_point() +
-  geom_smooth(method=&quot;lm&quot;)</code></pre>
-<pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
-<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_smooth).</code></pre>
-<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
-<p><img src="penguins_files/figure-html/unnamed-chunk-3-1.png" width="672" />
-The body mass would positively related to the bill length, and species
-would also impact the body mass. Chinstrap would generally have longer
-bill length, and relatively the same body mass comparing to that of
-Adelie. The Gentoo penguins are the heavies species among the three of
-them.</p>
-<div id="sexual-dimorphism" class="section level2">
-<h2>sexual dimorphism</h2>
-<pre class="r"><code>penguins %&gt;%
-  ggplot(mapping = aes(x = bill_length_mm, y=bill_depth_mm, color=sex, size=body_mass_g)) +
-  geom_point()+
-  facet_wrap(~species)</code></pre>
-<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
-<p><img src="penguins_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-</div>
+
 
 
 
