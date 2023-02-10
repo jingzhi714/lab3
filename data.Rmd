@@ -8,7 +8,7 @@ output: html_document
 
 
 ##Data
-![get some fries for tonight]{https://pica.zhimg.com/50/v2-168170b598edfcd7d54a75778ebbb329_720w.jpg}
+![get some fries for tonight]{https://i2.hdslb.com/bfs/archive/5f9b77ab205054e9fc1d10d70c94fc7b980587fe.jpg@480w_270h_1c}
 
 ```{rsetup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
