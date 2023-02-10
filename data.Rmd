@@ -4,3 +4,14 @@ author: "Jingzhi"
 date: "2023-02-10"
 output: html_document
 ---
+
+
+
+##Data
+![get some fries for tonight]{https://pica.zhimg.com/50/v2-168170b598edfcd7d54a75778ebbb329_720w.jpg}
+
+```{rsetup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+View(penguins)
+```
+

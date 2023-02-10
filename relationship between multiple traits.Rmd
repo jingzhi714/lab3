@@ -4,3 +4,13 @@ author: "Jingzhi"
 date: "2023-02-10"
 output: html_document
 ---
+##relationship between multiple traits
+
+```{r}
+penguins %>%
+  ggplot(mapping = aes(x = body_mass_g, y=flipper_length_mm, color=species)) +
+  geom_point() +
+  geom_smooth(method="lm")
+```
+The body mass would positively related to the bill length, and species would also impact the body mass. Chinstrap would generally have longer bill length, and relatively the same body mass comparing to that of Adelie. The Gentoo penguins are the heavies species among the three of them. 
+

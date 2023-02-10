@@ -3,6 +3,17 @@ navbar:
   title: "penguins"
   left:
     - text: "home"
-      href: penguins.html
-   
+      href: data.html
+    - text: "trait"
+      href: single-trait-distribution.html  
+    - text: "relationship"
+      href: relationship-between-multiple-traits.html 
+    - text: "sex"
+      href: sexual_dimorphism.html
 output_dir: "."
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    toc: true 
+    toc_float: true 
